@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for article in article_list %}
+        <a href="{% url 'article_detail' article.pk %}"> {{ article.title }} </a>
+    {% endfor %}
+</body>
+</html>
