@@ -1,0 +1,2 @@
+pickle模块的 pickle.dumps 报错:
+不能序列化protocbuf, tornado返回的time_task_id 对象
