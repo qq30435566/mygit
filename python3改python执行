@@ -1,0 +1,19 @@
+原文链接 https://blog.csdn.net/yucicheung/article/details/79334957
+
+Ubuntu默认环境下，
+输入命令python时调用的版本是python2.7，其中版本信息可用python -V命令查看；
+要调用python3，需要执行命令python3，同样版本信息可以用python3 -V查看．
+先想在执行命令python时，直接调用python3．
+解决方案
+step1.更改环境变量
+
+echo alias python=python3 >> ~/.bashrc
+
+其中
+(1)echo表示打印/输出
+(2)alis python=python3是要打印的内容
+(3)>> ~/.bashrc表示输出目标文件是~/.bashrc，且>>表示输出方式是添加，如果用>则表示覆盖
+注意：万一上述命令不小心写成>而覆盖了原环境变量文件，请参考~/.bashrc文件的恢复方法恢复初始配置的.bashrc文件
+step2.环境变量生效
+
+source ~/.bashrc
