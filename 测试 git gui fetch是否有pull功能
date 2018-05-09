@@ -1,0 +1,2 @@
+测试 git gui fetch是否有pull功能
+本地fetch后只是放到了stage(暂储区), 需要合并后才能看到
