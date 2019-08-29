@@ -1,1 +1,1 @@
-python renamePNG.py abc
+不做好笔记,  时间一久,  就不知道当初写的什么了
